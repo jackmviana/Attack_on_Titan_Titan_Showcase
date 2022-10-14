@@ -15,7 +15,7 @@ The Marvel's Legends Gallery couldn't have been made possible without the extens
 After wireframing, whiteboarding, and planning with the Trello board, I'll lay down the basic HTML code for the page. This includes the top nav bar, marvels logo, a sign in button (which wont function but are just to make a blueprint/illusion). Then layout a flex box/grid to have the images of the heroes appear in the center on the page, being the main attraction. To the right will be a section for the heroes "card", with details about each individual hero. Below that will be a carousel that can be shuffled horizontally, with the selected heroes name displaying in the center and highlighted. Buttons for each hero. Animations will be attempted for the carousel, and for the images and "cards" as you scroll through the carousel. I want to implement something that highlights the heroes image, like a spotlight or glow. Mainly, I will use what we learned when creating the Pokedex and use it as a starting point for this project. Using fetch to link the url from the heroes section of the API, one for each hero. Then use .then to target the information I want to include.
 
 ## Trello/Wireframe
-# https://trello.com/b/1GH5NBfW/marvel-api
+https://trello.com/b/1GH5NBfW/marvel-api
 
 ## Credits
 ### https://developer.marvel.com/
