@@ -23,7 +23,7 @@ async function eren (event) {
             let erenName = document.querySelector(`#personName`)
             erenName.innerHTML = res.name
             let erenBio = document.querySelector(`#personBio`)
-            erenBio.innerHTML = `Fearless, stubborn, passionate, Eren Jaeger is humanities last hope for survival. Or is he? His mission is to be free, and will do whatever it takes to gaurantee it.`
+            erenBio.innerHTML = `a former member of the Scout Regiment and the main protagonist of Attack on Titan. He is the only son of Grisha and Carla Jaeger, the younger paternal half brother of Zeke Jaeger, and the current holder of the Attack Titan, Founding Titan, and the War Hammer Titan.Fearless, stubborn, passionate, Eren Jaeger is humanities last hope for survival. Or is he? His mission is to be free, and will do whatever it takes to gaurantee it.`
             let erenGender = document.querySelector(`#personGender`)
             erenGender.innerHTML = res.gender
             let erenHeight = document.querySelector(`#personHeight`)
@@ -165,3 +165,107 @@ async function reiner (event) {
         }
         
         reinerTitanButton.addEventListener(`click`, reinerTitan)
+
+
+        async function annie (event) {
+
+            event.preventDefault()
+            
+            fetch(`https://attackontitanapi.herokuapp.com/api/characters/13
+            `).then(res => {
+                return res.json()
+            })
+                .then(res => {
+                    console.log(res)
+                    let annieName = document.querySelector(`#personName`)
+                    annieName.innerHTML = res.name
+                    let annieBio = document.querySelector(`#personBio`)
+                    annieBio.innerHTML = `Annie Leonhart is a graduate of the 104th Training Corps and former member of the Military Police Brigade. Her exceptional skills with swords and unarmed combat earned her the 4th rank, but she is also noted to be a lone wolf who struggles to work with others.`
+                    let annieGender = document.querySelector(`#personGender`)
+                    annieGender.innerHTML = res.gender
+                    let annieHeight = document.querySelector(`#personHeight`)
+                    annieHeight.innerHTML = `5" 0'`
+                })
+                .catch(err => {
+                    console.log(`error!`, err)
+                })
+            }
+            
+            annieButton.addEventListener(`click`, annie)
+        
+
+            async function annieTitan (event) {
+
+                event.preventDefault()
+                
+                fetch(`https://attackontitanapi.herokuapp.com/api/titans/5
+                `).then(res => {
+                    return res.json()
+                })
+                    .then(res => {
+                        console.log(res)
+                        let annieTitanName = document.querySelector(`#titanName`)
+                        annieTitanName.innerHTML = res.name
+                        let annieTitanBio = document.querySelector(`#titanBio`)
+                        annieTitanBio.innerHTML = res.description
+                        let annieTitanHeight = document.querySelector(`#titanHeight`)
+                        annieTitanHeight.innerHTML = `${res.height_m} meters`
+                    })
+                    .catch(err => {
+                        console.log(`error!`, err)
+                    })
+                }
+                
+                annieTitanButton.addEventListener(`click`, annieTitan)
+
+
+                async function bertholdt (event) {
+
+                    event.preventDefault()
+                    
+                    fetch(`https://attackontitanapi.herokuapp.com/api/characters/15
+                    `).then(res => {
+                        return res.json()
+                    })
+                        .then(res => {
+                            console.log(res)
+                            let bertholdtName = document.querySelector(`#personName`)
+                            bertholdtName.innerHTML = res.name
+                            let bertholdtBio = document.querySelector(`#personBio`)
+                            bertholdtBio.innerHTML = `an Eldian who was part of Marley's Warrior Unit. He originated from the Liberio internment zone and possessed the ability to transform into the Colossal Titan, making him one of the greatest threats to humanity within the walls.`
+                            let bertholdtGender = document.querySelector(`#personGender`)
+                            bertholdtGender.innerHTML = res.gender
+                            let bertholdtHeight = document.querySelector(`#personHeight`)
+                            bertholdtHeight.innerHTML = `6" 4'`
+                        })
+                        .catch(err => {
+                            console.log(`error!`, err)
+                        })
+                    }
+                    
+                    bertholdtButton.addEventListener(`click`, bertholdt)
+
+
+                    async function bertholdtTitan (event) {
+
+                        event.preventDefault()
+                        
+                        fetch(`https://attackontitanapi.herokuapp.com/api/titans/10
+                        `).then(res => {
+                            return res.json()
+                        })
+                            .then(res => {
+                                console.log(res)
+                                let bertholdtTitanName = document.querySelector(`#titanName`)
+                                bertholdtTitanName.innerHTML = res.name
+                                let bertholdtTitanBio = document.querySelector(`#titanBio`)
+                                bertholdtTitanBio.innerHTML = res.description
+                                let bertholdtTitanHeight = document.querySelector(`#titanHeight`)
+                                bertholdtTitanHeight.innerHTML = `${res.height_m} meters`
+                            })
+                            .catch(err => {
+                                console.log(`error!`, err)
+                            })
+                        }
+                        
+                        bertholdtTitanButton.addEventListener(`click`, bertholdtTitan)
