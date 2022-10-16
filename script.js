@@ -25,9 +25,12 @@ async function eren (event) {
             let erenBio = document.querySelector(`#personBio`)
             erenBio.innerHTML = `a former member of the Scout Regiment and the main protagonist of Attack on Titan. He is the only son of Grisha and Carla Jaeger, the younger paternal half brother of Zeke Jaeger, and the current holder of the Attack Titan, Founding Titan, and the War Hammer Titan.Fearless, stubborn, passionate, Eren Jaeger is humanities last hope for survival. Or is he? His mission is to be free, and will do whatever it takes to gaurantee it.`
             let erenGender = document.querySelector(`#personGender`)
-            erenGender.innerHTML = res.gender
+            erenGender.innerHTML = `Gender- ${res.gender}`
             let erenHeight = document.querySelector(`#personHeight`)
-            erenHeight.innerHTML = `6" 0'`
+            erenHeight.innerHTML = `Height- 6" 0'`
+            let erenFa = document.querySelector(`#personFa`)
+            erenFa.innerHTML = `First appearance episode- 
+            To You, in 2000 Years: The Fall of Shiganshina, Part 1`
         })
         .catch(err => {
             console.log(`error!`, err)
@@ -50,9 +53,18 @@ fetch(`https://attackontitanapi.herokuapp.com/api/titans/11
         let erenTitanName = document.querySelector(`#titanName`)
         erenTitanName.innerHTML = res.name
         let erenTitanHeight = document.querySelector(`#titanHeight`)
-            erenTitanHeight.innerHTML = `${res.height_m} meters`
+            erenTitanHeight.innerHTML = `Height- ${res.height_m} meters`
         let erenTitanBio = document.querySelector(`#titanBio`)
         erenTitanBio.innerHTML = res.description
+        let erenTitanFa = document.querySelector(`#titanFa`)
+            erenTitanFa.innerHTML = `First appearance episode- 
+            Small Blade: The Struggle for Trost, Part 3`
+        let erenAbility1 = document.querySelector(`#a1`)
+            erenAbility1.innerHTML = `Future memory inheritance`
+        let erenAbility2 = document.querySelector(`#a2`)
+            erenAbility2.innerHTML = `Titan control`
+        let erenAbility3 = document.querySelector(`#a3`)
+            erenAbility3.innerHTML = `Anatomical manipulation`
     })
     .catch(err => {
         console.log(`error!`, err)
@@ -77,9 +89,12 @@ async function zeke (event) {
             let zekeBio = document.querySelector(`#personBio`)
             zekeBio.innerHTML = `The former War Chief of Marley's Warriors, assigned to take the Founding Titan from the Eldians of Paradis Island. He is the current holder of the Beast Titan, and is considered the strongest warrior by Reiner Braun, contrasting Levi Ackermann's title of "humanity's strongest soldier."[8] He manipulated and deceived both sides of the war between Eldia and Marley in order to achieve his own agenda of causing the extinction of his own people, which he views as "salvation."`
             let zekeGender = document.querySelector(`#personGender`)
-            zekeGender.innerHTML = res.gender
+            zekeGender.innerHTML = `Gender- ${res.gender}`
             let zekeHeight = document.querySelector(`#personHeight`)
-            zekeHeight.innerHTML = `6" 0'`
+            zekeHeight.innerHTML = `Height- 6" 0'`
+            let zekeFa = document.querySelector(`#personFa`)
+            zekeFa.innerHTML = `First appearance episode- 
+            Beast Titan`
         })
         .catch(err => {
             console.log(`error!`, err)
@@ -102,9 +117,19 @@ async function zeke (event) {
                 let zekeTitanName = document.querySelector(`#titanName`)
                 zekeTitanName.innerHTML = res.name
                 let zekeTitanHeight = document.querySelector(`#titanHeight`)
-                    zekeTitanHeight.innerHTML = `${res.height_m} meters`
+                    zekeTitanHeight.innerHTML = `Height- ${res.height_m} meters`
                 let zekeTitanBio = document.querySelector(`#titanBio`)
                 zekeTitanBio.innerHTML = res.description
+                let zekeTitanFa = document.querySelector(`#titanFa`)
+                zekeTitanFa.innerHTML = `First appearance episode- Beast Titan`
+                let zekeAbility1 = document.querySelector(`#a1`)
+                        zekeAbility1.innerHTML = `Can create titans`
+                        let zekeAbility2 = document.querySelector(`#a2`)
+                        zekeAbility2.innerHTML = `Control over pure titans`
+                        let zekeAbility3 = document.querySelector(`#a3`)
+                        zekeAbility3.innerHTML = `Skin Hardening`
+            
+                
             })
             .catch(err => {
                 console.log(`error!`, err)
@@ -130,9 +155,12 @@ async function reiner (event) {
             let reinerBio = document.querySelector(`#personBio`)
             reinerBio.innerHTML = `The Vice Captain of the Warrior Unit and the main protagonist of Attack on Titan from the Marleyan perspective. He is the illegitimate son of an Eldian and a Marleyan and grew up in Liberio's internment zone. Eventually, he was selected as a child to become one of Marley's Warriors. At the age of ten, he inherited the power of the Armored Titan.`
             let reinerGender = document.querySelector(`#personGender`)
-            reinerGender.innerHTML = res.gender
+            reinerGender.innerHTML = `Gender- ${res.gender}`
             let reinerHeight = document.querySelector(`#personHeight`)
-            reinerHeight.innerHTML = `6" 2'`
+            reinerHeight.innerHTML = `Height- 6" 2'`
+            let reinerFa = document.querySelector(`#personFa`)
+            reinerFa.innerHTML = `First appearance episode- 
+            That Day: The Fall of Shiganshina, Part 2`
         })
         .catch(err => {
             console.log(`error!`, err)
@@ -157,7 +185,13 @@ async function reiner (event) {
                 let reinerTitanBio = document.querySelector(`#titanBio`)
                 reinerTitanBio.innerHTML = res.description
                 let reinerTitanHeight = document.querySelector(`#titanHeight`)
-                reinerTitanHeight.innerHTML = `${res.height_m} meters`
+                reinerTitanHeight.innerHTML = `Height- ${res.height_m} meters`
+                let reinerTitanFa = document.querySelector(`#titanFa`)
+                reinerTitanFa.innerHTML = `First appearance episode- That Day: The Fall of Shiganshina, Part 2`
+                let reinerAbility1 = document.querySelector(`#a1`)
+                reinerAbility1.innerHTML = `Armored skin`
+                let reinerAbility2 = document.querySelector(`#a2`)
+                reinerAbility2.innerHTML = `Skin Hardening`
             })
             .catch(err => {
                 console.log(`error!`, err)
@@ -182,9 +216,12 @@ async function reiner (event) {
                     let annieBio = document.querySelector(`#personBio`)
                     annieBio.innerHTML = `Annie Leonhart is a graduate of the 104th Training Corps and former member of the Military Police Brigade. Her exceptional skills with swords and unarmed combat earned her the 4th rank, but she is also noted to be a lone wolf who struggles to work with others.`
                     let annieGender = document.querySelector(`#personGender`)
-                    annieGender.innerHTML = res.gender
+                    annieGender.innerHTML = `Gender- ${res.gender}`
                     let annieHeight = document.querySelector(`#personHeight`)
-                    annieHeight.innerHTML = `5" 0'`
+                    annieHeight.innerHTML = `Height- 5" 0'`
+                    let annieFa = document.querySelector(`#personFa`)
+                    annieFa.innerHTML = `First appearance episode- 
+                    That Day: The Fall of Shiganshina, Part 2`
                 })
                 .catch(err => {
                     console.log(`error!`, err)
@@ -209,7 +246,15 @@ async function reiner (event) {
                         let annieTitanBio = document.querySelector(`#titanBio`)
                         annieTitanBio.innerHTML = res.description
                         let annieTitanHeight = document.querySelector(`#titanHeight`)
-                        annieTitanHeight.innerHTML = `${res.height_m} meters`
+                        annieTitanHeight.innerHTML = `Height- ${res.height_m} meters`
+                        let annieTitanFa = document.querySelector(`#titanFa`)
+                        annieTitanFa.innerHTML = `First appearance episode- Female Titan: The 57th Exterior Scouting Mission, Part 1`
+                        let annieAbility1 = document.querySelector(`#a1`)
+                        annieAbility1.innerHTML = `Skin Hardening`
+                        let annieAbility2 = document.querySelector(`#a2`)
+                        annieAbility2.innerHTML = `Can attract nearby titans`
+                        let annieAbility3 = document.querySelector(`#a3`)
+                        annieAbility3.innerHTML = `Versatile`
                     })
                     .catch(err => {
                         console.log(`error!`, err)
@@ -234,9 +279,11 @@ async function reiner (event) {
                             let bertholdtBio = document.querySelector(`#personBio`)
                             bertholdtBio.innerHTML = `an Eldian who was part of Marley's Warrior Unit. He originated from the Liberio internment zone and possessed the ability to transform into the Colossal Titan, making him one of the greatest threats to humanity within the walls.`
                             let bertholdtGender = document.querySelector(`#personGender`)
-                            bertholdtGender.innerHTML = res.gender
+                            bertholdtGender.innerHTML = `Gender- ${res.gender}`
                             let bertholdtHeight = document.querySelector(`#personHeight`)
-                            bertholdtHeight.innerHTML = `6" 4'`
+                            bertholdtHeight.innerHTML = `Height- 6" 4'`
+                            let bertholdtFa = document.querySelector(`#personFa`)
+                            bertholdtFa.innerHTML = `First appearance episode- To You, in 2000 Years: The Fall of Shiganshina, Part 1`
                         })
                         .catch(err => {
                             console.log(`error!`, err)
@@ -261,7 +308,15 @@ async function reiner (event) {
                                 let bertholdtTitanBio = document.querySelector(`#titanBio`)
                                 bertholdtTitanBio.innerHTML = res.description
                                 let bertholdtTitanHeight = document.querySelector(`#titanHeight`)
-                                bertholdtTitanHeight.innerHTML = `${res.height_m} meters`
+                                bertholdtTitanHeight.innerHTML = `Height- ${res.height_m} meters`
+                                let bertholdtTitanFa = document.querySelector(`#titanFa`)
+                                bertholdtTitanFa.innerHTML = `First appearance episode- Female Titan: To You, in 2000 Years: The Fall of Shiganshina, Part 1`
+                                let bertholdtAbility1 = document.querySelector(`#a1`)
+                                bertholdtAbility1.innerHTML = `Steam emission`
+                                let bertholdtAbility2 = document.querySelector(`#a2`)
+                                bertholdtAbility2.innerHTML = `Creates an explosion when transforming`
+                                let bertholdtAbility3 = document.querySelector(`#a3`)
+                                bertholdtAbility3.innerHTML = `Massive Height`
                             })
                             .catch(err => {
                                 console.log(`error!`, err)
