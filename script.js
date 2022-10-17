@@ -23,7 +23,7 @@ async function eren (event) {
             let erenName = document.querySelector(`#personName`)
             erenName.innerHTML = res.name
             let erenBio = document.querySelector(`#personBio`)
-            erenBio.innerHTML = `a former member of the Scout Regiment and the main protagonist of Attack on Titan. He is the only son of Grisha and Carla Jaeger, the younger paternal half brother of Zeke Jaeger, and the current holder of the Attack Titan, Founding Titan, and the War Hammer Titan.Fearless, stubborn, passionate, Eren Jaeger is humanities last hope for survival. Or is he? His mission is to be free, and will do whatever it takes to gaurantee it.`
+            erenBio.innerHTML = `A former member of the Scout Regiment and the main protagonist of Attack on Titan. He is the only son of Grisha and Carla Jaeger, the younger paternal half brother of Zeke Jaeger, and the current holder of the Attack Titan, Founding Titan, and the War Hammer Titan. Fearless, stubborn, passionate, Eren Jaeger is humanities last hope for survival. Or is he? His mission is to be free, and will do whatever it takes to gaurantee it.`
             let erenGender = document.querySelector(`#personGender`)
             erenGender.innerHTML = `Gender- ${res.gender}`
             let erenHeight = document.querySelector(`#personHeight`)
@@ -31,6 +31,8 @@ async function eren (event) {
             let erenFa = document.querySelector(`#personFa`)
             erenFa.innerHTML = `First appearance episode- 
             To You, in 2000 Years: The Fall of Shiganshina, Part 1`
+            let erenImage = document.querySelector(`#personImage`)
+            erenImage.src = "assets/eren image.png"
         })
         .catch(err => {
             console.log(`error!`, err)
@@ -65,6 +67,9 @@ fetch(`https://attackontitanapi.herokuapp.com/api/titans/11
             erenAbility2.innerHTML = `Titan control`
         let erenAbility3 = document.querySelector(`#a3`)
             erenAbility3.innerHTML = `Anatomical manipulation`
+        let erenTitanImage = document.querySelector(`#titanImage`)
+            erenTitanImage.src = "assets/AttackTitan.png"
+        
     })
     .catch(err => {
         console.log(`error!`, err)
@@ -95,6 +100,8 @@ async function zeke (event) {
             let zekeFa = document.querySelector(`#personFa`)
             zekeFa.innerHTML = `First appearance episode- 
             Beast Titan`
+            let zekeImage = document.querySelector(`#personImage`)
+            zekeImage.src = `assets/Zeke_Anime_Timeskip.webp`
         })
         .catch(err => {
             console.log(`error!`, err)
@@ -128,6 +135,8 @@ async function zeke (event) {
                         zekeAbility2.innerHTML = `Control over pure titans`
                         let zekeAbility3 = document.querySelector(`#a3`)
                         zekeAbility3.innerHTML = `Skin Hardening`
+                        let zekeTitanImage = document.querySelector(`#titanImage`)
+                        zekeTitanImage.src = "assets/beast titan.png"
             
                 
             })
@@ -161,6 +170,8 @@ async function reiner (event) {
             let reinerFa = document.querySelector(`#personFa`)
             reinerFa.innerHTML = `First appearance episode- 
             That Day: The Fall of Shiganshina, Part 2`
+            let reinerImage = document.querySelector(`#personImage`)
+            reinerImage.src = `assets/reiner braun.png`
         })
         .catch(err => {
             console.log(`error!`, err)
@@ -192,6 +203,8 @@ async function reiner (event) {
                 reinerAbility1.innerHTML = `Armored skin`
                 let reinerAbility2 = document.querySelector(`#a2`)
                 reinerAbility2.innerHTML = `Skin Hardening`
+                let reinerTitanImage = document.querySelector(`#titanImage`)
+                reinerTitanImage.src = `assets/armored titan.png`
             })
             .catch(err => {
                 console.log(`error!`, err)
@@ -222,6 +235,8 @@ async function reiner (event) {
                     let annieFa = document.querySelector(`#personFa`)
                     annieFa.innerHTML = `First appearance episode- 
                     That Day: The Fall of Shiganshina, Part 2`
+                    let annieImage = document.querySelector(`#personImage`)
+                    annieImage.src = `assets/annie leonhart.png`
                 })
                 .catch(err => {
                     console.log(`error!`, err)
@@ -255,6 +270,8 @@ async function reiner (event) {
                         annieAbility2.innerHTML = `Can attract nearby titans`
                         let annieAbility3 = document.querySelector(`#a3`)
                         annieAbility3.innerHTML = `Versatile`
+                        let annieTitanImage = document.querySelector(`#titanImage`)
+                        annieTitanImage.src = `assets/female titan.png`
                     })
                     .catch(err => {
                         console.log(`error!`, err)
@@ -284,6 +301,8 @@ async function reiner (event) {
                             bertholdtHeight.innerHTML = `Height- 6" 4'`
                             let bertholdtFa = document.querySelector(`#personFa`)
                             bertholdtFa.innerHTML = `First appearance episode- To You, in 2000 Years: The Fall of Shiganshina, Part 1`
+                            let bertholdtImage = document.querySelector(`#personImage`)
+                            bertholdtImage.src = `assets/bertholdt hoover.png`
                         })
                         .catch(err => {
                             console.log(`error!`, err)
@@ -317,6 +336,8 @@ async function reiner (event) {
                                 bertholdtAbility2.innerHTML = `Creates an explosion when transforming`
                                 let bertholdtAbility3 = document.querySelector(`#a3`)
                                 bertholdtAbility3.innerHTML = `Massive Height`
+                                let bertholdtTitanImage= document.querySelector(`#titanImage`)
+                                bertholdtTitanImage.src = `assets/colossal titan.png`
                             })
                             .catch(err => {
                                 console.log(`error!`, err)
