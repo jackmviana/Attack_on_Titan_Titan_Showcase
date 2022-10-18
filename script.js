@@ -8,6 +8,8 @@ const bertholdtButton = document.querySelector(`#bertholdtButton`)
 const bertholdtTitanButton = document.querySelector(`#bertholdtTitanButton`)
 const annieButton = document.querySelector(`#annieButton`)
 const annieTitanButton = document.querySelector(`#annieTitanButton`)
+let personImage = document.querySelector(`#personImage`)
+let titanImage = document.querySelector(`#titanImage`)
 
 
 async function eren (event) {
@@ -29,10 +31,11 @@ async function eren (event) {
             let erenHeight = document.querySelector(`#personHeight`)
             erenHeight.innerHTML = `Height- 6" 0'`
             let erenFa = document.querySelector(`#personFa`)
-            erenFa.innerHTML = `First appearance episode- 
-            To You, in 2000 Years: The Fall of Shiganshina, Part 1`
+            erenFa.innerHTML = `To You, in 2000 Years: The Fall of Shiganshina, Part 1`
             let erenImage = document.querySelector(`#personImage`)
             erenImage.src = "assets/eren image.png"
+            
+
         })
         .catch(err => {
             console.log(`error!`, err)
@@ -59,8 +62,7 @@ fetch(`https://attackontitanapi.herokuapp.com/api/titans/11
         let erenTitanBio = document.querySelector(`#titanBio`)
         erenTitanBio.innerHTML = res.description
         let erenTitanFa = document.querySelector(`#titanFa`)
-            erenTitanFa.innerHTML = `First appearance episode- 
-            Small Blade: The Struggle for Trost, Part 3`
+            erenTitanFa.innerHTML = `Small Blade: The Struggle for Trost, Part 3`
         let erenAbility1 = document.querySelector(`#a1`)
             erenAbility1.innerHTML = `Future memory inheritance`
         let erenAbility2 = document.querySelector(`#a2`)
@@ -69,6 +71,19 @@ fetch(`https://attackontitanapi.herokuapp.com/api/titans/11
             erenAbility3.innerHTML = `Anatomical manipulation`
         let erenTitanImage = document.querySelector(`#titanImage`)
             erenTitanImage.src = "assets/AttackTitan.png"
+        let personImage = document.querySelector(`#personImage`)
+        let titanImage = document.querySelector(`#titanImage`)  
+        personImage.style.position = `relative`
+        personImage.style.z-index == 2
+        personImage.style.width = `100px`
+        personImage.style.top = `420px`
+        personImage.style.left = `50px`
+        titanImage.style.position = relative
+        titanImage.style.z-index; 1
+        titanImage.style.max-width == `500px`
+        titanImage.style.max-height == `700px`
+        titanImage.style.top == 0
+        titanImage.style.left == 0
         
     })
     .catch(err => {
@@ -98,8 +113,7 @@ async function zeke (event) {
             let zekeHeight = document.querySelector(`#personHeight`)
             zekeHeight.innerHTML = `Height- 6" 0'`
             let zekeFa = document.querySelector(`#personFa`)
-            zekeFa.innerHTML = `First appearance episode- 
-            Beast Titan`
+            zekeFa.innerHTML = `Beast Titan`
             let zekeImage = document.querySelector(`#personImage`)
             zekeImage.src = `assets/Zeke_Anime_Timeskip.webp`
         })
@@ -128,7 +142,7 @@ async function zeke (event) {
                 let zekeTitanBio = document.querySelector(`#titanBio`)
                 zekeTitanBio.innerHTML = res.description
                 let zekeTitanFa = document.querySelector(`#titanFa`)
-                zekeTitanFa.innerHTML = `First appearance episode- Beast Titan`
+                zekeTitanFa.innerHTML = `Beast Titan`
                 let zekeAbility1 = document.querySelector(`#a1`)
                         zekeAbility1.innerHTML = `Can create titans`
                         let zekeAbility2 = document.querySelector(`#a2`)
@@ -168,8 +182,7 @@ async function reiner (event) {
             let reinerHeight = document.querySelector(`#personHeight`)
             reinerHeight.innerHTML = `Height- 6" 2'`
             let reinerFa = document.querySelector(`#personFa`)
-            reinerFa.innerHTML = `First appearance episode- 
-            That Day: The Fall of Shiganshina, Part 2`
+            reinerFa.innerHTML = `That Day: The Fall of Shiganshina, Part 2`
             let reinerImage = document.querySelector(`#personImage`)
             reinerImage.src = `assets/reiner braun.png`
         })
@@ -198,7 +211,7 @@ async function reiner (event) {
                 let reinerTitanHeight = document.querySelector(`#titanHeight`)
                 reinerTitanHeight.innerHTML = `Height- ${res.height_m} meters`
                 let reinerTitanFa = document.querySelector(`#titanFa`)
-                reinerTitanFa.innerHTML = `First appearance episode- That Day: The Fall of Shiganshina, Part 2`
+                reinerTitanFa.innerHTML = `That Day: The Fall of Shiganshina, Part 2`
                 let reinerAbility1 = document.querySelector(`#a1`)
                 reinerAbility1.innerHTML = `Armored skin`
                 let reinerAbility2 = document.querySelector(`#a2`)
@@ -233,8 +246,7 @@ async function reiner (event) {
                     let annieHeight = document.querySelector(`#personHeight`)
                     annieHeight.innerHTML = `Height- 5" 0'`
                     let annieFa = document.querySelector(`#personFa`)
-                    annieFa.innerHTML = `First appearance episode- 
-                    That Day: The Fall of Shiganshina, Part 2`
+                    annieFa.innerHTML = `That Day: The Fall of Shiganshina, Part 2`
                     let annieImage = document.querySelector(`#personImage`)
                     annieImage.src = `assets/annie leonhart.png`
                 })
@@ -263,7 +275,7 @@ async function reiner (event) {
                         let annieTitanHeight = document.querySelector(`#titanHeight`)
                         annieTitanHeight.innerHTML = `Height- ${res.height_m} meters`
                         let annieTitanFa = document.querySelector(`#titanFa`)
-                        annieTitanFa.innerHTML = `First appearance episode- Female Titan: The 57th Exterior Scouting Mission, Part 1`
+                        annieTitanFa.innerHTML = `Female Titan: The 57th Exterior Scouting Mission, Part 1`
                         let annieAbility1 = document.querySelector(`#a1`)
                         annieAbility1.innerHTML = `Skin Hardening`
                         let annieAbility2 = document.querySelector(`#a2`)
@@ -300,7 +312,7 @@ async function reiner (event) {
                             let bertholdtHeight = document.querySelector(`#personHeight`)
                             bertholdtHeight.innerHTML = `Height- 6" 4'`
                             let bertholdtFa = document.querySelector(`#personFa`)
-                            bertholdtFa.innerHTML = `First appearance episode- To You, in 2000 Years: The Fall of Shiganshina, Part 1`
+                            bertholdtFa.innerHTML = `To You, in 2000 Years: The Fall of Shiganshina, Part 1`
                             let bertholdtImage = document.querySelector(`#personImage`)
                             bertholdtImage.src = `assets/bertholdt hoover.png`
                         })
@@ -329,7 +341,7 @@ async function reiner (event) {
                                 let bertholdtTitanHeight = document.querySelector(`#titanHeight`)
                                 bertholdtTitanHeight.innerHTML = `Height- ${res.height_m} meters`
                                 let bertholdtTitanFa = document.querySelector(`#titanFa`)
-                                bertholdtTitanFa.innerHTML = `First appearance episode- Female Titan: To You, in 2000 Years: The Fall of Shiganshina, Part 1`
+                                bertholdtTitanFa.innerHTML = `Female Titan: To You, in 2000 Years: The Fall of Shiganshina, Part 1`
                                 let bertholdtAbility1 = document.querySelector(`#a1`)
                                 bertholdtAbility1.innerHTML = `Steam emission`
                                 let bertholdtAbility2 = document.querySelector(`#a2`)

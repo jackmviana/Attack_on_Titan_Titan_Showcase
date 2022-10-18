@@ -1,7 +1,7 @@
-# The Marvel Legends Gallery
+# Attack on Titan: Titan Showcase
 
 ## The Purpose
-A Gallery of Marvel's greatest heroes, showcased all in one place. Select a hero to dsiplay their image, alongside them are their description, abilities, and some of their most noteworthy comic book appearances! 
+A Gallery of Marvel's greatest heroes, showcased all in one place. Select a hero to dsiplay their image, alongside them are their description, abilities, and their first episode appearance! 
 
 ## The Vision
 The page serves as an homage to Marvel's Legends, to reflect that, its packaged in a smooth and minimal user experience. Sleek modern designs, with animations for the Legend's selecter carousel, animations for the images and side panels, sitting flush on a minmalistic site that is user friendly.
