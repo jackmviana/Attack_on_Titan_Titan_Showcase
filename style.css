@@ -122,7 +122,7 @@ html {
     font-size: 20px;
     text-shadow: 2px 2px 8px;
     color: green;
-    background-color: white;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(209, 209, 209));
     padding: 7px;
     border-radius: 19px;
 }
@@ -153,7 +153,7 @@ html {
     font-size: 20px;
     text-shadow: 2px 2px 8px;
     color: rgb(209, 118, 14);
-    background-color: white;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(193, 193, 193));
     padding: 7px;
     border-radius: 19px;
 }
@@ -184,7 +184,7 @@ html {
     font-size: 20px;
     text-shadow: 2px 2px 8px;
     color: rgb(9, 103, 165);
-    background-color: white;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(197, 196, 196));
     padding: 7px;
     border-radius: 19px;
 }
@@ -215,7 +215,7 @@ html {
     font-size: 20px;
     text-shadow: 2px 2px 8px;
     color: rgb(163, 145, 8);
-    background-color: white;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(176, 175, 175));
     padding: 7px;
     border-radius: 19px;
 }
@@ -246,7 +246,7 @@ html {
     font-size: 20px;
     text-shadow: 2px 2px 8px;
     color: rgb(221, 51, 42);
-    background-color: white;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(176, 176, 176));
     padding: 7px;
     border-radius: 19px;
 }
