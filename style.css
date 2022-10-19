@@ -107,5 +107,162 @@ html {
 #buttonsDiv {
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 70px;
+}
+
+#erenB {
+    display: flex;
+    justify-content: center;
     
+}
+
+#erenButton {
+    font-family: 'Anton', serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px;
+    color: green;
+    background-color: white;
+    padding: 7px;
+    border-radius: 19px;
+}
+
+#erenTB {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#erenTitanButton {
+    font-family: 'Anton', serif;
+    font-size: 24px;
+    text-shadow: 3px 2px 6px;
+    letter-spacing: 2.5px;
+    color: silver;
+    background: transparent;
+    border: none;
+}
+
+#zekeB {
+    display: flex;
+    justify-content: center;
+}
+
+#zekeButton {
+    font-family: 'Anton', serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px;
+    color: rgb(209, 118, 14);
+    background-color: white;
+    padding: 7px;
+    border-radius: 19px;
+}
+
+#zekeTB {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#zekeTitanButton {
+    font-family: 'Anton', serif;
+    font-size: 24px;
+    text-shadow: 3px 2px 6px;
+    letter-spacing: 2.5px;
+    color: silver;
+    background: transparent;
+    border: none;
+}
+
+#reinerB {
+    display: flex;
+    justify-content: center;
+}
+
+#reinerButton {
+    font-family: 'Anton', serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px;
+    color: rgb(9, 103, 165);
+    background-color: white;
+    padding: 7px;
+    border-radius: 19px;
+}
+
+#reinerTB {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#reinerTitanButton {
+    font-family: 'Anton', serif;
+    font-size: 24px;
+    text-shadow: 3px 2px 6px;
+    letter-spacing: 2.5px;
+    color: silver;
+    background: transparent;
+    border: none;
+}
+
+#annieB {
+    display: flex;
+    justify-content: center;
+}
+
+#annieButton {
+    font-family: 'Anton', serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px;
+    color: rgb(163, 145, 8);
+    background-color: white;
+    padding: 7px;
+    border-radius: 19px;
+}
+
+#annieTB {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#annieTitanButton {
+    font-family: 'Anton', serif;
+    font-size: 24px;
+    text-shadow: 3px 2px 6px;
+    letter-spacing: 2.5px;
+    color: silver;
+    background: transparent;
+    border: none;
+}
+
+#bertholdB {
+    display: flex;
+    justify-content: center;
+}
+
+#bertholdtButton {
+    font-family: 'Anton', serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px;
+    color: rgb(221, 51, 42);
+    background-color: white;
+    padding: 7px;
+    border-radius: 19px;
+}
+
+#bertholdtTB {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#bertholdtTitanButton {
+    font-family: 'Anton', serif;
+    font-size: 24px;
+    text-shadow: 3px 2px 6px;
+    letter-spacing: 2.5px;
+    color: silver;
+    background: transparent;
+    border: none;
 }
