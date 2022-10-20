@@ -34,7 +34,9 @@ async function eren (event) {
             erenFa.innerHTML = `To You, in 2000 Years: The Fall of Shiganshina, Part 1`
             let erenImage = document.querySelector(`#personImage`)
             erenImage.src = "assets/eren image.png"
-            
+            erenImage.style.display = `block`
+            let erenTitanImage = document.querySelector(`#titanImage`)
+            erenTitanImage.style.display = `none`
 
         })
         .catch(err => {
@@ -70,20 +72,10 @@ fetch(`https://attackontitanapi.herokuapp.com/api/titans/11
         let erenAbility3 = document.querySelector(`#a3`)
             erenAbility3.innerHTML = `Anatomical manipulation`
         let erenTitanImage = document.querySelector(`#titanImage`)
-            erenTitanImage.src = "assets/AttackTitan.png"
-        let personImage = document.querySelector(`#personImage`)
-        let titanImage = document.querySelector(`#titanImage`)  
-        personImage.style.position = `relative`
-        personImage.style.z-index == 2
-        personImage.style.width = `100px`
-        personImage.style.top = `420px`
-        personImage.style.left = `50px`
-        titanImage.style.position = relative
-        titanImage.style.z-index; 1
-        titanImage.style.max-width == `500px`
-        titanImage.style.max-height == `700px`
-        titanImage.style.top == 0
-        titanImage.style.left == 0
+            erenTitanImage.src = "assets/AttackTitan with eren.png"
+            erenTitanImage.style.display = `block`
+        let erenImage = document.querySelector(`#personImage`)
+            erenImage.style.display = `none`
         
     })
     .catch(err => {
@@ -116,6 +108,9 @@ async function zeke (event) {
             zekeFa.innerHTML = `Beast Titan`
             let zekeImage = document.querySelector(`#personImage`)
             zekeImage.src = `assets/Zeke_Anime_Timeskip.webp`
+            zekeImage.style.display = `block`
+            let zekeTitanImage = document.querySelector(`#titanImage`)
+            zekeTitanImage.style.display = `none`
         })
         .catch(err => {
             console.log(`error!`, err)
@@ -150,7 +145,10 @@ async function zeke (event) {
                         let zekeAbility3 = document.querySelector(`#a3`)
                         zekeAbility3.innerHTML = `Skin Hardening`
                         let zekeTitanImage = document.querySelector(`#titanImage`)
-                        zekeTitanImage.src = "assets/beast titan.png"
+                        zekeTitanImage.src = "assets/beast titan with zeke.png"
+                        zekeTitanImage.style.display = `block`
+                        let zekeImage = document.querySelector(`#personImage`)
+                        zekeImage.style.display = `none`
             
                 
             })
@@ -185,6 +183,10 @@ async function reiner (event) {
             reinerFa.innerHTML = `That Day: The Fall of Shiganshina, Part 2`
             let reinerImage = document.querySelector(`#personImage`)
             reinerImage.src = `assets/reiner braun.png`
+            reinerImage.style.display = `block`
+            let reinerTitanImage = document.querySelector(`#titanImage`)
+            reinerTitanImage.style.display = `none`
+
         })
         .catch(err => {
             console.log(`error!`, err)
@@ -217,7 +219,11 @@ async function reiner (event) {
                 let reinerAbility2 = document.querySelector(`#a2`)
                 reinerAbility2.innerHTML = `Skin Hardening`
                 let reinerTitanImage = document.querySelector(`#titanImage`)
-                reinerTitanImage.src = `assets/armored titan.png`
+                reinerTitanImage.src = `assets/armored titan with reiner.png`
+                reinerTitanImage.style.display = `block`
+                let reinerImage = document.querySelector(`#personImage`)
+                reinerImage.style.display = `none`
+                
             })
             .catch(err => {
                 console.log(`error!`, err)
@@ -249,6 +255,9 @@ async function reiner (event) {
                     annieFa.innerHTML = `That Day: The Fall of Shiganshina, Part 2`
                     let annieImage = document.querySelector(`#personImage`)
                     annieImage.src = `assets/annie leonhart.png`
+                    annieImage.style.display = `block`
+                    let annieTitanImage = document.querySelector(`#titanImage`)
+                    annieTitanImage.style.display = `none`
                 })
                 .catch(err => {
                     console.log(`error!`, err)
@@ -283,7 +292,10 @@ async function reiner (event) {
                         let annieAbility3 = document.querySelector(`#a3`)
                         annieAbility3.innerHTML = `Versatile`
                         let annieTitanImage = document.querySelector(`#titanImage`)
-                        annieTitanImage.src = `assets/female titan.png`
+                        annieTitanImage.src = `assets/female titan with annie.png`
+                        annieTitanImage.style.display = `block`
+                        let annieImage = document.querySelector(`#personImage`)
+                        annieImage.style.display = `none`
                     })
                     .catch(err => {
                         console.log(`error!`, err)
@@ -315,6 +327,9 @@ async function reiner (event) {
                             bertholdtFa.innerHTML = `To You, in 2000 Years: The Fall of Shiganshina, Part 1`
                             let bertholdtImage = document.querySelector(`#personImage`)
                             bertholdtImage.src = `assets/bertholdt hoover.png`
+                            bertholdtImage.style.display = `block`
+                            let bertholdtTitanImage = document.querySelector(`#titanImage`)
+                            bertholdtTitanImage.style.display = `none`
                         })
                         .catch(err => {
                             console.log(`error!`, err)
@@ -349,7 +364,10 @@ async function reiner (event) {
                                 let bertholdtAbility3 = document.querySelector(`#a3`)
                                 bertholdtAbility3.innerHTML = `Massive Height`
                                 let bertholdtTitanImage= document.querySelector(`#titanImage`)
-                                bertholdtTitanImage.src = `assets/colossal titan.png`
+                                bertholdtTitanImage.src = `assets/colossal titan with bertholdt.png`
+                                bertholdtTitanImage.style.display = `block`
+                                let bertholdtImage = document.querySelector(`#personImage`)
+                                bertholdtImage.style.display = `none`
                             })
                             .catch(err => {
                                 console.log(`error!`, err)
