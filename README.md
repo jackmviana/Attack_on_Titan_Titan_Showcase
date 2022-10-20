@@ -1,5 +1,5 @@
 # Attack on Titan: Titan Showcase
-![Image](https://wireframe.cc/XOJtTU)
+![Image](https://m.media-amazon.com/images/M/MV5BNzc5MTczNDQtNDFjNi00ZDU5LWFkNzItOTE1NzQzMzdhNzMxXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg)
 
 ## Description
 
